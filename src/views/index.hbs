@@ -1,40 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-      <div class="container mt-4">
-        <p class="h3">Signup</p>
-        <form action="/signup" method="post">
-            <div class="form-group ">
-              <label for="username">Name</label>
-              <input type="text" class="form-control" id="username" name="Name" placeholder="Enter name">
-            </div>
-            <div class="form-group">
-              <label for="usercontact">Contact no</label>
-              <input type="tel" class="form-control" id="usercontact"  name="Contact" placeholder="Enter Contact Number">
-              <small  class="form-text text-muted">We'll never share your Contact number  with anyone else.</small>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-      </div>
-      <br>
-      <hr>
-      <div class="container">
-        <p class="h3" >Search</p>
-          <form action="/search" method="post">
-            <div class="form-group ">
-                <label for="username1">Name</label>
-                <input type="text" class="form-control" id="username1" name="Name" placeholder="Enter name">
-            </div>
-            <button type="submit" class="btn btn-primary">Search</button>
-          </form>
-      </div>
-    
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Main Page</title>
+</head>
+<body>
+  <h3><p class="d-flex justify-content-center mt-5 ">Select Which Task You Want To See</p></h3>
+  <div class="d-flex justify-content-center">
+    <a class="btn btn-primary mt-4 mr-4" href="/frontend" role="button">Frontend</a>
+    <a class="btn btn-info mt-4" href="/backend" role="button">Backend</a>
+  </div>
+  
+</body>
 </html>
