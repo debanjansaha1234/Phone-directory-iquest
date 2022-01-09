@@ -27,7 +27,7 @@ app.post("/signup",async(req,res)=>{
             Contact:req.body.Contact
         })
         const Data= await userData.save();
-        res.status(201).send("Congraluations you just got enrolled");
+        res.status(201).send("Congraluations you just got enrolled.");
     }catch(e){
         res.status(404).send(e);
     }
@@ -38,11 +38,10 @@ app.post("/search",async(req,res)=>{
     try{
         const para1=req.body.Name
         const searchStudent=await Register.findOne({Name:para1});
-        console.log(searchStudent);
-        console.log(para1);
         if(searchStudent!=null)
         {
-            res.status(200).send("<h1>Matched. You are a user!<h1>");
+            res.status(200)
+            .send(`<h1>Matched. You are a user!</h1><h2>Name: ${searchStudent.Name} <br> Contact no: ${searchStudent.Contact}</h2>`);
             // res.render("search");                              /// trying to render webpage in post request. It worked.
         }
         else{
