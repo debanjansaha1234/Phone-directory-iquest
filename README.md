@@ -1,4 +1,4 @@
-### The Web-app is built using Node Js + Express JS + MongoDB(global Database)
+### The Web-app is built using Node Js + Express JS + MongoDB(remote Database)
 
 # Workings
 
