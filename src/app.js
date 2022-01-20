@@ -50,7 +50,6 @@ app.post("/search",async(req,res)=>{
         {
             res.status(200)
             .send(`<h1>Matched. You are a user!</h1><h2>Name: ${searchStudent.Name} <br> Contact no: ${searchStudent.Contact}</h2>`);
-            // res.render("search");                              /// trying to render webpage in post request. It worked.
         }
         else{
             res.status(404).send("<h1>Not Matched. Not a user</h1>");
