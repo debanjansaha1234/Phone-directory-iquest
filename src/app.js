@@ -22,12 +22,6 @@ app.get("/",(req,res)=>{
     res.render("index.hbs");
 });
 
-app.get("/backend",(req,res)=>{
-    res.render("backend.hbs");
-});
-app.get("/frontend",(req,res)=>{
-    res.render("frontend.hbs");
-});
 app.post("/signup",async(req,res)=>{
     try{
         const userData= new Register({
